@@ -2,6 +2,7 @@ abstract class BankAccount {
 
 	protected double accountBalance; //stop other coders from using this variable, but allow you to access it.
 	protected int accountNumber;
+	protected int fee;
 
 	public boolean withdraw(double money) {
 		if (money <= this.accountBalance) {
@@ -27,4 +28,6 @@ abstract class BankAccount {
 	abstract boolean pin(int pin); //abstract method
 	//no code body - classes that inherit from it, need to define the body
 	
+	// abstract void shutdownAccount();
+
 }
